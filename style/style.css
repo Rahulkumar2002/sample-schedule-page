@@ -327,9 +327,7 @@
   background-color: rgb(41, 9, 41);
   margin-bottom: 40px;
 }
-#charContainer {
-  background-color: transparent;
-  color: orange;
+#graph-js-container {
 }
 .graph-data-text {
   display: flex;

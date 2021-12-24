@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./style/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@1,500&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/0392b07053.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-core.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-pie.min.js"></script>
 
   <!-- graph script -->
 
@@ -185,7 +187,7 @@
             </span>
           </div>
           <div class="center-bottom-box-graph-container">
-            <span class="graph-container">
+            <span class="graph-container" id="graph-js-container">
 
             </span>
             <span class="graph-data-container">
@@ -375,6 +377,27 @@
       </div>
     </section>
   </div>
+  <script>
+    var data = anychart.data.set([
+      [35],
+      [65]
+    ]);
+
+    var palette = anychart.palettes.distinctColors();
+
+    palette.items([
+      { color: 'orange' },
+      { color: 'rgb(41, 9, 41)' }
+    ]);
+
+    var chart = anychart.pie(data)
+    chart.innerRadius('55%');
+
+    chart.title('')
+    chart.container('graph-js-container');
+    chart.palette(palette);
+    chart.draw();
+  </script>
 </body>
 
 </html>
