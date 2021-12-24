@@ -1,0 +1,258 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+/* Left side  */
+.left {
+  padding: 20px;
+  background-color: black;
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.logo {
+  font-size: 30px;
+  color: rgb(231, 109, 9);
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.left-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0px;
+}
+.list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 18px 0px;
+  cursor: pointer;
+}
+.list-item:hover .list-icon,
+.list-item:hover .list-text {
+  color: white;
+}
+.list-icon {
+  color: rgb(131, 131, 131);
+  font-size: 16px;
+  margin-right: 10px;
+  justify-self: flex-start;
+}
+.list-text {
+  font-size: 16px;
+  color: rgb(131, 131, 131);
+  font-family: "Roboto", sans-serif;
+}
+.selected > .list-icon,
+.selected > .list-text {
+  color: white;
+}
+.logout {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  bottom: 25px;
+  left: 30%;
+  cursor: pointer;
+}
+.icon-logout {
+  color: rgb(131, 131, 131);
+  font-size: 18px;
+  margin-right: 10px;
+}
+.logout-text {
+  font-size: 18px;
+  color: rgb(131, 131, 131);
+  font-family: "Roboto", sans-serif;
+}
+.logout:hover .icon-logout,
+.logout:hover .logout-text {
+  color: white;
+}
+/* Center  */
+.center {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.center-top {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.schedule {
+  font-size: 30px;
+  margin: 10px;
+  font-weight: 600;
+}
+.date {
+  display: flex;
+  align-items: center;
+}
+.date-text {
+  font-size: 14px;
+  font-weight: 550;
+  margin-right: 35px;
+}
+.date-icon {
+  font-size: 20px;
+  margin-left: 2px;
+}
+.icon {
+  position: absolute;
+  top: 44px;
+  left: 710px;
+}
+
+/* center center  */
+.center-center {
+  display: flex;
+  flex-direction: column;
+  height: 48vh;
+  box-shadow: 0px 10px 10x black;
+}
+.center-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  transition: 0.5 ease all;
+}
+.center-list-item {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 30px;
+  color: grey;
+}
+.center-selected {
+  text-decoration: underline;
+  font-weight: 600;
+  color: black;
+}
+.center-list-item:hover {
+  text-decoration: underline;
+  font-weight: 600;
+  color: black;
+}
+
+/* Center Box*/
+
+.center-box {
+  width: 90%;
+  margin: 10px 10px 10px 10px;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+.center-box:hover {
+  background-color: black;
+}
+.center-box-icon-container {
+  margin-left: 20px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+  border-radius: 10px;
+}
+.center-box:hover .center-box-icon-container {
+  background-color: white;
+}
+.box-icon {
+  font-size: 25px;
+  color: black;
+}
+
+.center-box-span {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0px 20px;
+}
+
+.center-box-span-text {
+  font-weight: 600;
+}
+.center-box:hover .center-box-span-text {
+  color: white;
+}
+.center-box-span-time {
+  font-weight: 300;
+  color: grey;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.center-box-img-container {
+  width: 100px;
+  height: 60px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 50px;
+}
+
+.image {
+  margin-right: -10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+}
+
+/* Center Project Progress */
+.center-bottom {
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+.center-bottom-top {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+}
+.center-bottom-top-project {
+  margin-right: 30px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.center-bottom-top-icon {
+  cursor: pointer;
+  margin-left: 100px;
+}
+
+/* Right side */
+.right {
+  background-color: blue;
+  flex: 1.75;
+}
