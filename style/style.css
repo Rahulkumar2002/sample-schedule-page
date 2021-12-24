@@ -259,7 +259,6 @@
 .center-bottom-top-icon {
   cursor: pointer;
   margin-left: 250px;
-  cursor: pointer;
 }
 .center-bottom-box {
   width: 100%;
@@ -570,4 +569,136 @@ hr {
   font-size: 15px;
   color: black;
   margin-left: 10px;
+}
+.right-section-top-responsive {
+  display: none;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 780px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    height: 200vh;
+  }
+  .left {
+    display: none;
+  }
+  .center {
+    margin: 10px;
+    width: 100vw;
+    height: 120vh;
+    padding: 0px;
+  }
+  .right {
+    position: relative;
+    margin: 10px;
+    width: 100vw;
+  }
+  .right-section-top {
+    display: none;
+  }
+  .right-section-top-responsive {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px;
+  }
+  .right-section-top-search {
+    flex: 6;
+    width: 100%;
+  }
+  .responsive-logo {
+    flex: 1;
+    font-size: 20px;
+    margin: 0px 30px 0px 10px;
+  }
+  .right-section-top-image-container {
+    flex: 0.5;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .center-list-item {
+    margin: 5px 10px 5px 5px;
+    margin-bottom: 20px;
+  }
+  .center-box {
+    margin: 5px 5px 5px 5px;
+  }
+  .center-box-icon-container {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  .box-icon {
+    font-size: 20px;
+  }
+  .center-center {
+    height: 46vh;
+  }
+  .center-box-span {
+    margin: 0px 10px;
+    width: 180px;
+  }
+  .center-box-span-text {
+    font-size: 15px;
+  }
+  .center-box-span-time {
+    font-size: 10px;
+  }
+  .center-box-img-container {
+    margin-left: 15px;
+  }
+  .center-bottom {
+    margin: 0px;
+  }
+  .center-bottom-top {
+    margin: 0px 10px;
+  }
+  .center-bottom-top-project {
+    margin-right: 15px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    width: 80%;
+  }
+  .center-bottom-top-icon {
+    display: none;
+  }
+  .center-bottom-box-top-text {
+    font-size: 17px;
+  }
+  .center-bottom-box-top-icon {
+    flex: 1;
+  }
+  .right {
+    padding: 0px;
+  }
+  .right-section-center-headdate-container {
+    margin-left: 27%;
+  }
+  .right-section-center-headdate-icon {
+    top: 8px;
+  }
+  .right-section-center-box {
+    width: 98%;
+    margin: 10px 0px 10px 0px;
+  }
+  .right-section-lower-header {
+    margin: 10px;
+  }
+  .right-section-lower-header-text1 {
+    margin-right: 60%;
+  }
+  .right-section-lower-box {
+    width: 97%;
+    height: 80px;
+    margin: 0px 0px 15px 0px;
+  }
+  .icon {
+    top: 83px;
+    left: 345px;
+  }
 }
