@@ -112,20 +112,18 @@
 .date {
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
 .date-text {
   font-size: 14px;
   font-weight: 550;
-  margin-right: 35px;
+  margin-right: 5px;
 }
 .date-icon {
-  font-size: 20px;
-  margin-left: 2px;
+  margin: 5px 0px;
 }
 .icon {
-  position: absolute;
-  top: 23px;
-  left: 670px;
+  font-size: 25px;
 }
 
 /* center center  */
@@ -138,7 +136,7 @@
 .center-list {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-around;
   width: 100%;
 }
 .center-list-item {
@@ -413,14 +411,17 @@
 }
 .right-section-center-headdate-container {
   margin-left: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .right-section-center-headdate-text {
   font-size: 14px;
   font-weight: 550;
+  margin-right: 10px;
 }
 .right-section-center-headdate-icon {
-  position: absolute;
-  top: 73px;
+  font-size: 25px;
 }
 
 /*Right section center box*/
@@ -576,7 +577,7 @@ hr {
 
 /* Responsive Design */
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 980px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -593,6 +594,7 @@ hr {
     height: 120vh;
     padding: 0px;
   }
+
   .right {
     position: relative;
     margin: 10px;
@@ -606,6 +608,7 @@ hr {
     align-items: center;
     flex-direction: row;
     margin: 10px;
+    width: 98vw;
   }
   .right-section-top-search {
     flex: 6;
@@ -624,6 +627,7 @@ hr {
   .center-list-item {
     margin: 5px 10px 5px 5px;
     margin-bottom: 20px;
+    font-size: 14px;
   }
   .center-box {
     margin: 5px 5px 5px 5px;
@@ -650,7 +654,7 @@ hr {
     font-size: 10px;
   }
   .center-box-img-container {
-    margin-left: 15px;
+    margin: 0px;
   }
   .center-bottom {
     margin: 0px;
@@ -661,11 +665,21 @@ hr {
   .center-bottom-top-project {
     margin-right: 15px;
     margin-bottom: 5px;
+    margin-top: 10px;
     font-size: 20px;
     width: 80%;
   }
   .center-bottom-top-icon {
     display: none;
+  }
+  .center-box-img-container {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 30px;
+    flex: 2;
   }
   .center-bottom-box-top-text {
     font-size: 17px;
@@ -692,13 +706,12 @@ hr {
   .right-section-lower-header-text1 {
     margin-right: 60%;
   }
+  .right-section-center-headdate-text {
+    font-size: 12px;
+  }
   .right-section-lower-box {
     width: 97%;
     height: 80px;
     margin: 0px 0px 15px 0px;
-  }
-  .icon {
-    top: 83px;
-    left: 345px;
   }
 }
