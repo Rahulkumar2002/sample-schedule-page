@@ -21,7 +21,9 @@
     <!-- Left section -->
     <!-- Responsive Top bar      -->
     <div class="right-section-top-responsive">
-      <span class="responsive-logo">Logo</span>
+      <span class="responsive-logo" id="responsive-button">
+        <i class="fas fa-align-justify" id="logo-icon-responsive" style="margin-right: 20px;"></i>
+      </span>
       <span class="right-section-top-search">
         <i class="fas fa-search search-icon"></i>
         <input class="right-section-top-input" placeholder="Search" />
@@ -36,8 +38,10 @@
 
     <!-- Responsive Top bar      -->
 
-    <section class="left">
-      <div class="logo">Logo</div>
+    <section class="left" id="Left">
+      <div class="logo">
+        Logo
+      </div>
       <ul class="left-list">
         <li class="list-item">
           <span class="list-icon">
@@ -412,6 +416,33 @@
     chart.container('graph-js-container');
     chart.palette(palette);
     chart.draw();
+
+
+    //Responsive Navbar
+
+    const button = document.querySelector("#responsive-button");
+    const logoIcon = document.querySelector
+      ("#logo-icon-responsive");
+    const Left = document.querySelector("#Left");
+    button.addEventListener('click', () => {
+      if (button.className === "responsive-logo") {
+        button.className += " show";
+      } else {
+        button.className = "responsive-logo";
+      }
+      if (logoIcon.className === 'fas fa-align-justify') {
+        logoIcon.className = "fa-times-circle fas";
+      } else {
+        logoIcon.className = "fas fa-align-justify";
+      }
+      if (Left.className === "left-class-for-click") {
+        Left.className = "left";
+      } else {
+        Left.className = "left-class-for-click";
+      }
+    });
+
+
   </script>
 </body>
 

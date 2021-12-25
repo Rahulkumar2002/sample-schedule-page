@@ -588,6 +588,35 @@ hr {
   .left {
     display: none;
   }
+  .left-class-for-click {
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+    padding-top: 0px;
+    background-color: black;
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .logo {
+    margin-bottom: 5px;
+  }
+  .left-list {
+    margin: 5px 0px;
+  }
+  .logout {
+    display: inline-block;
+    position: relative;
+    width: 33%;
+    margin-right: 163px;
+    margin-top: 42px;
+  }
+  .icon-logout {
+    margin-right: 0px;
+  }
   .center {
     margin: 10px;
     width: 100vw;
